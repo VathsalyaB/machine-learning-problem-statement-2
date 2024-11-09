@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Optimization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Full version of jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        #sidebar {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+        }
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+        #content {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" id="sidebar">
+                <h4>Menu</h4>
+                <a href="#" id="heatmapLink">Heatmap</a><br>
+                <a href="#" id="passengerGraphLink">Average Passengers Graph</a><br>
+                <a href="#" id="calculateBusesLink">Calculate Bus Count</a><br>
+                <a href="#" id="calculateLiveBusesLink">Calculate Live Bus Count</a>
+            </div>
+            <div class="col-md-9" id="content">
+                <h1>Bus Route Optimization</h1>
+                <h2>Enter Origin and Destination</h2>
+                <form id="routeForm">
+                    <div class="form-group">
+                        <label for="origin">Origin:</label>
+                        <input type="text" class="form-control" id="origin" name="origin" value="Broadway" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination" name="destination" value="Velachery" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Find Optimal Route</button>
+                </form>
+                <div class="result" id="optimalRouteResult"></div>
+                <div class="result" id="busCountResult"></div>
+                <div class="result" id="liveBusCountResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle route optimization
+        $('#routeForm').on('submit', function(e) {
+            e.preventDefault();
+            const origin = $('#origin').val();
+            const destination = $('#destination').val();
+
+            $.post('/optimize', { origin, destination }, function(data) {
+                console.log(data)
+                $('#optimalRouteResult').html('Optimal Route: ' + data.route + '<br>Details: ' + data.details);
+            }).fail(function() {
+                $('#optimalRouteResult').html('Error finding optimal route. Please try again.');
+            });
+        });
+
+        // Handle Calculate Bus Count
+        $('#calculateBusesLink').click(function() {
+            var routeNumber = prompt("Please enter the route number:");
+            if (routeNumber) {
+                $.get('/calculate_buses', { route: routeNumber }, function(data) {
+                    $('#busCountResult').html('Buses Required per Hour: ' + data.buses_required);
+                }).fail(function(xhr) {
+                    if (xhr.responseJSON && xhr.responseJSON.error) {
+                        $('#busCountResult').html('Error: ' + xhr.responseJSON.error);
+                    } else {
+                        $('#busCountResult').html('Error calculating buses. Please try again.');
+                    }
+                });
+            }
+        });
+
+        // Handle Calculate Live Bus Count
+        $('#calculateLiveBusesLink').click(function() {
+            var routeNumber = prompt("Please enter the route number for live count:");
+            if (routeNumber) {
+                $.get('/calculate_live_buses', { route: routeNumber }, function(data) {
+                    $('#liveBusCountResult').html('Buses Required Based on Live Count: ' + data.buses_required);
+                }).fail(function(xhr) {
+                    if (xhr.responseJSON && xhr.responseJSON.error) {
+                        $('#liveBusCountResult').html('Error: ' + xhr.responseJSON.error);
+                    } else {
+                        $('#liveBusCountResult').html('Error calculating live buses. Please try again.');
+                    }
+                });
+            }
+        });
+
+        // Handle Heatmap Link
+        $('#heatmapLink').click(function() {
+            alert('Heatmap feature coming soon!');
+        });
+
+        // Handle Average Passengers Graph Link
+        $('#passengerGraphLink').click(function() {
+            alert('Average Passengers Graph feature coming soon!');
+        });
+    </script>
+</body>
+</html>

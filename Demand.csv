@@ -1,0 +1,113 @@
+﻿Route Number,Stop Name,Time Slot,Average Passengers
+1,Thiruvottiyur,7:00 AM - 8:00 AM,150
+1,Royapuram,8:00 AM - 9:00 AM,200
+1,Broadway,9:00 AM - 10:00 AM,250
+1,Saidapet,5:00 PM - 6:00 PM,300
+1,Guindy,6:00 PM - 7:00 PM,350
+15B,Egmore,7:00 AM - 8:00 AM,180
+15B,Nungambakkam,8:00 AM - 9:00 AM,220
+15B,T. Nagar,9:00 AM - 10:00 AM,270
+15B,Adyar,5:00 PM - 6:00 PM,320
+15B,Velachery,6:00 PM - 7:00 PM,370
+21G,Central,7:00 AM - 8:00 AM,160
+21G,Poonamallee High Road,8:00 AM - 9:00 AM,210
+21G,Ambattur,9:00 AM - 10:00 AM,260
+21G,Avadi,5:00 PM - 6:00 PM,310
+27B,Saidapet,7:00 AM - 8:00 AM,170
+27B,Guindy,8:00 AM - 9:00 AM,220
+27B,Tambaram,9:00 AM - 10:00 AM,270
+27B,Vandalur,5:00 PM - 6:00 PM,320
+27B,Guduvanchery,6:00 PM - 7:00 PM,370
+29C,Chetpet,7:00 AM - 8:00 AM,190
+29C,Nungambakkam,8:00 AM - 9:00 AM,240
+29C,T. Nagar,9:00 AM - 10:00 AM,290
+29C,Adyar,5:00 PM - 6:00 PM,340
+29C,Thiruvanmiyur,6:00 PM - 7:00 PM,390
+41D,Mylapore,7:00 AM - 8:00 AM,160
+41D,Nungambakkam,8:00 AM - 9:00 AM,210
+41D,Aminjikarai,9:00 AM - 10:00 AM,260
+41D,Anna Nagar West,5:00 PM - 6:00 PM,310
+47A,Adyar,7:00 AM - 8:00 AM,180
+47A,Kotturpuram,8:00 AM - 9:00 AM,230
+47A,Anna Nagar,9:00 AM - 10:00 AM,280
+47A,Mogappair,5:00 PM - 6:00 PM,330
+47A,Ambattur Industrial Estate,6:00 PM - 7:00 PM,380
+51J,Santhome,7:00 AM - 8:00 AM,170
+51J,Adyar,8:00 AM - 9:00 AM,220
+51J,Thiruvanmiyur,9:00 AM - 10:00 AM,270
+51J,Sholinganallur,5:00 PM - 6:00 PM,320
+51J,Kelambakkam,6:00 PM - 7:00 PM,370
+54,Central,7:00 AM - 8:00 AM,160
+54,Koyambedu,8:00 AM - 9:00 AM,210
+54,Maduravoyal,9:00 AM - 10:00 AM,260
+54,Poonamallee,5:00 PM - 6:00 PM,310
+56D,Tondiarpet,7:00 AM - 8:00 AM,150
+56D,Manali,8:00 AM - 9:00 AM,200
+56D,Manali Bus Terminal,9:00 AM - 10:00 AM,250
+70,Ashok Pillar,7:00 AM - 8:00 AM,170
+70,Chromepet,8:00 AM - 9:00 AM,220
+70,Tambaram,9:00 AM - 10:00 AM,270
+79,Central,7:00 AM - 8:00 AM,160
+79,Padi,8:00 AM - 9:00 AM,210
+79,Mogappair,9:00 AM - 10:00 AM,260
+79,Ambattur Estate,5:00 PM - 6:00 PM,310
+88C,Santhome,7:00 AM - 8:00 AM,180
+88C,Adyar,8:00 AM - 9:00 AM,200
+88C,Thiruvanmiyur,9:00 AM - 10:00 AM,230
+88C,Perungudi,5:00 PM - 6:00 PM,280
+88C,Sholinganallur,6:00 PM - 7:00 PM,330
+101,Central,7:00 AM - 8:00 AM,150
+101,Park Town,8:00 AM - 9:00 AM,190
+101,Kilpauk,9:00 AM - 10:00 AM,240
+101,Koyambedu,5:00 PM - 6:00 PM,290
+101,Vadapalani,6:00 PM - 7:00 PM,340
+115,Saidapet,7:00 AM - 8:00 AM,160
+115,Little Mount,8:00 AM - 9:00 AM,210
+115,Guindy,9:00 AM - 10:00 AM,260
+115,Ekkattuthangal,5:00 PM - 6:00 PM,310
+115,Alandur,6:00 PM - 7:00 PM,360
+119,Mandaveli,7:00 AM - 8:00 AM,180
+119,Mylapore,8:00 AM - 9:00 AM,230
+119,Nandanam,9:00 AM - 10:00 AM,280
+119,Saidapet,5:00 PM - 6:00 PM,330
+119,Guindy,6:00 PM - 7:00 PM,380
+123A,Broadway,7:00 AM - 8:00 AM,170
+123A,Egmore,8:00 AM - 9:00 AM,220
+123A,Chetpet,9:00 AM - 10:00 AM,270
+123A,Nungambakkam,5:00 PM - 6:00 PM,320
+123A,T. Nagar,6:00 PM - 7:00 PM,370
+135B,Adyar,7:00 AM - 8:00 AM,190
+135B,Indira Nagar,8:00 AM - 9:00 AM,240
+135B,Thiruvanmiyur,9:00 AM - 10:00 AM,290
+135B,Perungudi,5:00 PM - 6:00 PM,340
+135B,Thoraipakkam,6:00 PM - 7:00 PM,390
+147,Koyambedu,7:00 AM - 8:00 AM,160
+147,Vadapalani,8:00 AM - 9:00 AM,210
+147,Ashok Nagar,9:00 AM - 10:00 AM,260
+147,Guindy,5:00 PM - 6:00 PM,310
+147,Velachery,6:00 PM - 7:00 PM,360
+170,Tambaram,7:00 AM - 8:00 AM,180
+170,Chromepet,8:00 AM - 9:00 AM,230
+170,Pallavaram,9:00 AM - 10:00 AM,280
+170,Alandur,5:00 PM - 6:00 PM,330
+170,Guindy,6:00 PM - 7:00 PM,380
+189A,Red Hills,7:00 AM - 8:00 AM,160
+189A,Madhavaram,8:00 AM - 9:00 AM,210
+189A,Padi,9:00 AM - 10:00 AM,260
+189A,Anna Nagar,5:00 PM - 6:00 PM,310
+189A,Arumbakkam,6:00 PM - 7:00 PM,360
+205C,Guindy,7:00 AM - 8:00 AM,150
+205C,Velachery,8:00 AM - 9:00 AM,200
+205C,Pallikaranai,9:00 AM - 10:00 AM,250
+205C,Sholinganallur,5:00 PM - 6:00 PM,300
+205C,Medavakkam,6:00 PM - 7:00 PM,350
+219D,Marina Beach,7:00 AM - 8:00 AM,180
+219D,Triplicane,8:00 AM - 9:00 AM,230
+219D,Mylapore,9:00 AM - 10:00 AM,280
+219D,T. Nagar,5:00 PM - 6:00 PM,330
+219D,Nungambakkam,6:00 PM - 7:00 PM,380
+234E,Anna Nagar West,7:00 AM - 8:00 AM,160
+234E,Mogappair,8:00 AM - 9:00 AM,210
+234E,Ambattur,9:00 AM - 10:00 AM,260
+234E,Avadi,5:00 PM - 6:00 PM,310
+234E,Thiruninravur,6:00 PM - 7:00 PM,360

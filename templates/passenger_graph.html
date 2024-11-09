@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Graph for {{ destination }}</title>
+</head>
+<body>
+    <h1>Average Passengers at {{ destination }} by Time Slot</h1>
+    <img src="{{ url_for('static', filename='passenger_graph.png') }}" alt="Passenger Graph">
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
